@@ -6,4 +6,5 @@ Sistema para gerenciamento de Eventos com .NET Core e Angular
 FluentValidation
 
 ## Padrões de Projeto
-Segregando responsabilidades de Leitura e Escrita com CQRS
+- Injeção de dependência
+- Segregação de responsabilidades de Leitura e Escrita com CQRS
