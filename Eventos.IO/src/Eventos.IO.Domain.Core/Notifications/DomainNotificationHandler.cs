@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Eventos.IO.Domain.Core.Notifications
@@ -16,9 +17,11 @@ namespace Eventos.IO.Domain.Core.Notifications
             return _notifications;
         }
 
-        public void Handler(DomainNotification message)
+        public void Handle(DomainNotification message)
         {
             _notifications.Add(message);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Erro: {message.Key} - {message.Value}");
         }
 
         public bool HasNotifications()

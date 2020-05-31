@@ -7,6 +7,6 @@ namespace Eventos.IO.Domain.Core.Events
     //Aceita qualquer classe que herde de Message
     public interface IHandler<in T> where T : Message
     {
-        void Handler(T message);
+        void Handle(T message);
     }
 }
