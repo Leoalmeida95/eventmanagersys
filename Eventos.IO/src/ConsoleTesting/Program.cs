@@ -6,10 +6,20 @@ namespace ConsoleTesting
     {
         static void Main(string[] args)
         {
-            var evento = new Evento.IO.Domain.Models.Evento("Nome", DateTime.Now, DateTime.Now, false, 50, false, "A");
+            var evento = new Evento.IO.Domain.Models.Evento("", DateTime.Now, DateTime.Now, true, 50, false, "");
 
             Console.WriteLine(evento.ToString());
-            var name = Console.ReadLine();
+            Console.WriteLine(evento.EhValido());
+
+            if (!evento.ValidationResult.IsValid)
+            {
+                foreach (var erro in evento.ValidationResult.Errors)
+                {
+                    Console.WriteLine(erro.ErrorMessage);
+                }
+            }
+
+            Console.ReadKey();
         }
     }
 }

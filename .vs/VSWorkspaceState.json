@@ -4,8 +4,12 @@
     "\\Eventos.IO",
     "\\Eventos.IO\\src",
     "\\Eventos.IO\\src\\ConsoleTesting",
-    "\\Eventos.IO\\src\\Evento.IO.Domain"
+    "\\Eventos.IO\\src\\ConsoleTesting\\bin",
+    "\\Eventos.IO\\src\\ConsoleTesting\\bin\\Debug",
+    "\\Eventos.IO\\src\\Evento.IO.Domain",
+    "\\Eventos.IO\\src\\Eventos.IO.Domain.Core",
+    "\\Eventos.IO\\tests"
   ],
-  "SelectedNode": "\\Eventos.IO\\global.json",
+  "SelectedNode": "\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
   "PreviewInSolutionExplorer": false
 }
