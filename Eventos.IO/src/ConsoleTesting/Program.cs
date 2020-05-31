@@ -6,7 +6,7 @@ namespace ConsoleTesting
     {
         static void Main(string[] args)
         {
-            var evento = new Evento.IO.Domain.Models.Evento("", DateTime.Now, DateTime.Now, true, 50, false, "");
+            var evento = new Evento.IO.Domain.Eventos.Evento("", DateTime.Now, DateTime.Now, true, 50, false, "");
 
             Console.WriteLine(evento.ToString());
             Console.WriteLine(evento.EhValido());

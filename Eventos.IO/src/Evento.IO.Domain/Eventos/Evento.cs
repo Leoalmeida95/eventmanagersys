@@ -1,10 +1,10 @@
-﻿using Eventos.IO.Domain.Core.Models;
+﻿using Evento.IO.Domain.Organizadores;
+using Eventos.IO.Domain.Core.Models;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Evento.IO.Domain.Models
+namespace Evento.IO.Domain.Eventos
 {
     public class Evento : Entity<Evento>
     {
@@ -25,8 +25,6 @@ namespace Evento.IO.Domain.Models
             Valor = valor;
             Online = online;
             NomeEmpresa = nomeEmpresa;
-
-
         }
 
         public string Nome { get; private set; }
