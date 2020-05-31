@@ -9,6 +9,7 @@
     ".NETStandard,Version=v1.6/": {
       "evento.io.domain/1.0.0": {
         "dependencies": {
+          "Eventos.IO.Domain.Core": "1.0.0",
           "NETStandard.Library": "1.6.1"
         },
         "runtime": {
@@ -751,6 +752,14 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "eventos.io.domain.core/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "Eventos.IO.Domain.Core.dll": {}
+        }
       }
     }
   },
@@ -1270,6 +1279,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "eventos.io.domain.core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1194,6 +1194,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Eventos.IO.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "bin/placeholder/Eventos.IO.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Eventos.IO.Domain.Core.dll": {}
+        }
       }
     }
   },
@@ -4466,10 +4479,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Eventos.IO.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Eventos.IO.Domain.Core/Eventos.IO.Domain.Core.csproj",
+      "msbuildProject": "../Eventos.IO.Domain.Core/Eventos.IO.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.6": [
+      "Eventos.IO.Domain.Core >= 1.0.0",
       "NETStandard.Library >= 1.6.1"
     ]
   },
@@ -4499,7 +4518,11 @@
       },
       "frameworks": {
         "netstandard1.6": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj"
+            }
+          }
         }
       }
     },
