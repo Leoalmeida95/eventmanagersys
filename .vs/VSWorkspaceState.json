@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Eventos.IO"
+    "\\Eventos.IO",
+    "\\Eventos.IO\\src",
+    "\\Eventos.IO\\src\\ConsoleTesting",
+    "\\Eventos.IO\\src\\Evento.IO.Domain"
   ],
-  "SelectedNode": "\\Eventos.IO\\Eventos.IO.sln",
+  "SelectedNode": "\\Eventos.IO\\global.json",
   "PreviewInSolutionExplorer": false
 }
