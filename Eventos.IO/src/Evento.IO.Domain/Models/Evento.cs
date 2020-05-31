@@ -6,18 +6,37 @@ namespace Evento.IO.Domain.Models
 {
     public class Evento : Entity
     {
-        public string Nome { get; set; }
-        public string DescricaoCurta { get; set; }
-        public string DescricaoLonga { get; set; }
-        public DateTime DataInicio { get; set; }
-        public DateTime DataFim { get; set; }
-        public bool Gratuito { get; set; }
-        public decimal Valor { get; set; }
-        public bool Online { get; set; }
-        public string NomeEmpresa { get; set; }
-        public Categoria Categoria { get; set; }
-        public ICollection<Tags> Tags { get; set; }
-        public Endereco Endereco { get; set; }
-        public Organizador Organizador { get; set; }
+        public Evento(
+                    string nome, 
+                    DateTime dataInicio, 
+                    DateTime dataFim, 
+                    bool gratuito, 
+                    decimal valor, 
+                    bool online, 
+                    string nomeEmpresa)
+        {
+            Id = Guid.NewGuid();
+            Nome = nome;
+            DataInicio = dataInicio;
+            DataFim = dataFim;
+            Gratuito = gratuito;
+            Valor = valor;
+            Online = online;
+            NomeEmpresa = nomeEmpresa;
+        }
+
+        public string Nome { get; private set; }
+        public string DescricaoCurta { get; private set; }
+        public string DescricaoLonga { get; private set; }
+        public DateTime DataInicio { get; private set; }
+        public DateTime DataFim { get; private set; }
+        public bool Gratuito { get; private set; }
+        public decimal Valor { get; private set; }
+        public bool Online { get; private set; }
+        public string NomeEmpresa { get; private set; }
+        public Categoria Categoria { get; private set; }
+        public ICollection<Tags> Tags { get; private set; }
+        public Endereco Endereco { get; private set; }
+        public Organizador Organizador { get; private set; }
     }
 }
