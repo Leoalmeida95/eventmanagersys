@@ -1,0 +1,7 @@
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netcoreapp1.1\Evento.IO.Domain.deps.json
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netcoreapp1.1\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netcoreapp1.1\Evento.IO.Domain.pdb
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netcoreapp1.1\Evento.IO.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netcoreapp1.1\Evento.IO.Domain.AssemblyInfo.cs
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netcoreapp1.1\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netcoreapp1.1\Evento.IO.Domain.pdb

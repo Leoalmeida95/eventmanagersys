@@ -1,0 +1,7 @@
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard1.6\Evento.IO.Domain.deps.json
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard1.6\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard1.6\Evento.IO.Domain.pdb
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard1.6\Evento.IO.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard1.6\Evento.IO.Domain.AssemblyInfo.cs
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard1.6\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard1.6\Evento.IO.Domain.pdb
