@@ -27,7 +27,6 @@ namespace Evento.IO.Domain.CommandHandlers
         {
             foreach(var error in validationResult.Errors)
             {
-                Console.WriteLine(error.ErrorMessage);
                 _bus.RaiseEvent(new DomainNotification(error.PropertyName, error.ErrorMessage));
             }
         }

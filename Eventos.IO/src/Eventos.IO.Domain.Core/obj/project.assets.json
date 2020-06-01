@@ -314,11 +314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
+      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
       "projectName": "Eventos.IO.Domain.Core",
-      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
+      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
       "packagesPath": "C:\\Users\\leonardo.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\obj\\",
+      "outputPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

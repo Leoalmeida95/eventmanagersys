@@ -861,11 +861,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\ConsoleTesting\\ConsoleTesting.csproj",
+      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\ConsoleTesting\\ConsoleTesting.csproj",
       "projectName": "ConsoleTesting",
-      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\ConsoleTesting\\ConsoleTesting.csproj",
+      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\ConsoleTesting\\ConsoleTesting.csproj",
       "packagesPath": "C:\\Users\\leonardo.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\ConsoleTesting\\obj\\",
+      "outputPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\ConsoleTesting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -885,8 +885,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj": {
-              "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\eventmanagersys\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj"
+            "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj": {
+              "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj"
             }
           }
         }

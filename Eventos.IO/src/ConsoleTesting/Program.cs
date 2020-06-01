@@ -18,18 +18,20 @@ namespace ConsoleTesting
         {
             var bus = new FakeBus();
 
-            // registroi com sucesso
-            var cmd = new RegistrarEventoCommand("Dev", DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), true, 0, false, "Empresa");
+            // registro com sucesso
+            var date1 = DateTime.Now.AddDays(1);
+            var date2 = DateTime.Now.AddDays(2);
+            var cmd = new RegistrarEventoCommand("DevX", date1, date2, true, 0, true, "Empresa");
             Inicio(cmd);
             bus.SendCommand(cmd);
             Fim(cmd);
 
-            cmd = new RegistrarEventoCommand("", DateTime.Now.AddDays(2), DateTime.Now.AddDays(1), false, 0, false, "Empresa");
+            cmd = new RegistrarEventoCommand("", DateTime.Now.AddDays(2), DateTime.Now.AddDays(1), false, 0, false, "");
             Inicio(cmd);
             bus.SendCommand(cmd);
             Fim(cmd);
 
-            var cmd2 = new AtualizarEventoCommand(Guid.NewGuid(), "Devxx","","", DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), true, 0, false, "Empresa");
+            var cmd2 = new AtualizarEventoCommand(Guid.NewGuid(), "DevX", "", "", DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), false, 50, true, "Empresa");
             Inicio(cmd2);
             bus.SendCommand(cmd2);
             Fim(cmd2);

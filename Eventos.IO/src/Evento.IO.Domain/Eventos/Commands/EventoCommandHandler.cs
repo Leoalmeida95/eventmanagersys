@@ -50,8 +50,7 @@ namespace Evento.IO.Domain.Eventos.Commands
 
             if (Commit())
             {
-                Console.WriteLine("Evento registrado com sucesso");
-                _bus.RaiseEvent(new EventoRegistradoEvent(evento.Id, evento.Nome, evento.DataInicio, evento.DataFim, evento.Gratuito, evento.Valor, 
+                _bus.RaiseEvent(new EventoRegistradoEvent(evento.Id, evento.Nome, evento.DataInicio, evento.DataFim, evento.Gratuito, evento.Valor,
                                                         evento.Online, evento.NomeEmpresa));
             }
         }
@@ -70,7 +69,7 @@ namespace Evento.IO.Domain.Eventos.Commands
 
             if (Commit())
             {
-                _bus.RaiseEvent(new EventoAtualizadoEvent(evento.Id, evento.Nome, evento.DescricaoCurta, evento.DescricaoLonga, evento.DataInicio, evento.DataFim, 
+                _bus.RaiseEvent(new EventoAtualizadoEvent(evento.Id, evento.Nome, evento.DescricaoCurta, evento.DescricaoLonga, evento.DataInicio, evento.DataFim,
                                                          evento.Gratuito, evento.Valor, evento.Online, evento.NomeEmpresa));
             }
         }

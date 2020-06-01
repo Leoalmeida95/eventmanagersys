@@ -79,30 +79,30 @@ namespace Evento.IO.Domain.Eventos
 
             if (Gratuito)
                 RuleFor(a => a.Valor)
-                    .ExclusiveBetween(0, 0)
-                    .WithMessage("O valor não deve ser diferente de 0.00 se for gratuito.");
+                    .Equal(0).When(b => b.Gratuito)
+                    .WithMessage("O valor deve ser 0 se o evento for gratuito.");
         }
 
         private void ValidarData()
         {
-                RuleFor(a => a.DataInicio)
-                    .GreaterThan(b=>b.DataFim)
-                    .WithMessage("A data de início do evento deve ser maior que a data fim.");
+            RuleFor(a => a.DataFim)
+                .GreaterThan(b => b.DataInicio)
+                .WithMessage("A data de início deve ser posterior a data fim do evento.");
 
-                RuleFor(a => a.DataFim)
-                    .LessThan(b=>b.DataInicio)
-                    .WithMessage("A data fim do evento deve ser maior que a data início.");
+            RuleFor(a => a.DataInicio)
+                .GreaterThan(DateTime.Now)
+                .WithMessage("A data de início deve ser posterior a data atual.");
         }
 
         private void ValidarLocal()
         {
-            if(Online)
-            RuleFor(a => a.Endereco)
-                .Null().When(b=>b.Online)
-                .WithMessage("O evento não deve possuir endereço se for online.");
+            if (Online)
+                RuleFor(a => a.Endereco)
+                    .Null().When(b => b.Online)
+                    .WithMessage("O evento não deve possuir endereço se for online.");
             if (!Online)
                 RuleFor(a => a.Endereco)
-                    .NotNull().When(b=> !b.Online)
+                    .NotNull().When(b => !b.Online)
                 .WithMessage("O evento deve possuir endereço se não for online.");
         }
 
@@ -116,22 +116,22 @@ namespace Evento.IO.Domain.Eventos
 
         public static class EventoFactory
         {
-            public static Evento NovoEventoCompleto(Guid id, string nome, string descCurta, string descLonga, DateTime dataInicio, DateTime dataFim, 
+            public static Evento NovoEventoCompleto(Guid id, string nome, string descCurta, string descLonga, DateTime dataInicio, DateTime dataFim,
                                                     bool gratuito, decimal valor, bool online, string nomeEmpresa, Guid? organizadorId)
             {
                 var evento = new Evento()
                 {
-                Id = id,
-                Nome = nome,
-                DescricaoCurta = descCurta,
-                DescricaoLonga = descLonga,
-                DataInicio = dataInicio,
-                DataFim = dataFim,
-                Gratuito = gratuito,
-                Valor = valor,
-                Online = online,
-                NomeEmpresa = nomeEmpresa,
-            };
+                    Id = id,
+                    Nome = nome,
+                    DescricaoCurta = descCurta,
+                    DescricaoLonga = descLonga,
+                    DataInicio = dataInicio,
+                    DataFim = dataFim,
+                    Gratuito = gratuito,
+                    Valor = valor,
+                    Online = online,
+                    NomeEmpresa = nomeEmpresa,
+                };
 
                 if (organizadorId != null)
                     evento.Organizador = new Organizador(organizadorId.Value);
