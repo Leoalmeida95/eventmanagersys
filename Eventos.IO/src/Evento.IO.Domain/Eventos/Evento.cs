@@ -41,10 +41,26 @@ namespace Evento.IO.Domain.Eventos
         public decimal Valor { get; private set; }
         public bool Online { get; private set; }
         public string NomeEmpresa { get; private set; }
-        public Categoria Categoria { get; private set; }
+        public bool Excluido { get; private set; }
         public ICollection<Tags> Tags { get; private set; }
-        public Endereco Endereco { get; private set; }
-        public Organizador Organizador { get; private set; }
+        public Guid? CategoriaId { get; private set; }
+        public Guid? EnderecoId { get; private set; }
+        public Guid OrganizadorId { get; private set; }
+
+        // EF propriedades de nagevagação
+        public virtual Categoria Categoria { get; private set; }
+        public virtual Endereco Endereco { get; private set; }
+        public virtual Organizador Organizador { get; private set; }
+
+        #region Setters
+        public void AtribuirEndereco(Endereco endereco)
+        {
+            if (!endereco)
+            {
+
+            }
+        }
+        #endregion
 
         public override bool EhValido()
         {
