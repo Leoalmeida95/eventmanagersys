@@ -10,7 +10,15 @@ C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\
 C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.csproj.CopyComplete
 C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.dll
 C:\Users\leonardo.silva\Desktop\eventmanagersys\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard2.0\Evento.IO.Domain.deps.json
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard2.0\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard2.0\Evento.IO.Domain.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard2.0\Eventos.IO.Domain.Core.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\bin\Debug\netstandard2.0\Eventos.IO.Domain.Core.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.csprojAssemblyReference.cache
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.csproj.CoreCompileInputs.cache
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.AssemblyInfoInputs.cache
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.AssemblyInfo.cs
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.csproj.CopyComplete
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Evento.IO.Domain\obj\Debug\netstandard2.0\Evento.IO.Domain.pdb

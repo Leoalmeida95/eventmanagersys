@@ -113,32 +113,57 @@ namespace ConsoleTesting
 
 public class FakeRepository : IEventoRepository
 {
-    public void Add(Evento.IO.Domain.Eventos.Evento obj)
+    public void AdicioanrEndereco(Endereco endereco)
+    {
+       //
+    }
+
+    public void Adicionar(Evento.IO.Domain.Eventos.Evento obj)
+    {
+       //
+    }
+
+    public void Atualizar(Evento.IO.Domain.Eventos.Evento obj)
     {
         //
+    }
+
+    public void AtualizarEndereco(Endereco endereco)
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<Evento.IO.Domain.Eventos.Evento> Buscar(Expression<Func<Evento.IO.Domain.Eventos.Evento, bool>> predicate)
+    {
+        throw new NotImplementedException();
     }
 
     public void Dispose()
     {
-        //
+        throw new NotImplementedException();
     }
 
-    public IEnumerable<Evento.IO.Domain.Eventos.Evento> Find(Expression<Func<Evento.IO.Domain.Eventos.Evento, bool>> predicate)
+    public Endereco ObterEnderecoPorId(Guid id)
     {
         throw new NotImplementedException();
     }
 
-    public IEnumerable<Evento.IO.Domain.Eventos.Evento> GetAll()
+    public IEnumerable<Evento.IO.Domain.Eventos.Evento> ObterEventoPorOrganizador(Guid organizadorId)
     {
         throw new NotImplementedException();
     }
 
-    public Evento.IO.Domain.Eventos.Evento GetById(Guid id)
+    public Evento.IO.Domain.Eventos.Evento ObterPorId(Guid id)
     {
         return new Evento.IO.Domain.Eventos.Evento("Fake", DateTime.Now, DateTime.Now, true, 0, true, "Empresa");
     }
 
-    public void Remove(Guid id)
+    public IEnumerable<Evento.IO.Domain.Eventos.Evento> ObterTodos()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Remover(Guid id)
     {
         //
     }
@@ -146,11 +171,6 @@ public class FakeRepository : IEventoRepository
     public int SaveChanges()
     {
         throw new NotImplementedException();
-    }
-
-    public void Update(Evento.IO.Domain.Eventos.Evento obj)
-    {
-        //
     }
 }
 

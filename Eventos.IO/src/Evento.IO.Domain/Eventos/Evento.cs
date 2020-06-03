@@ -60,11 +60,17 @@ namespace Evento.IO.Domain.Eventos
             Endereco = endereco;
         }
 
+        public void ExcluirEvento ()
+        {
+            //TODO: O que é preciso validar?
+            Excluido = true;
+        }
+
         public void AtribuirCategoria(Categoria categoria)
         {
-            //if (!categoria.EhValido()) return;
+            if (!categoria.EhValido()) return;
 
-            //Categoria = categoria;
+            Categoria = categoria;
         }
         #endregion
 
@@ -153,7 +159,7 @@ namespace Evento.IO.Domain.Eventos
         public static class EventoFactory
         {
             public static Evento NovoEventoCompleto(Guid id, string nome, string descCurta, string descLonga, DateTime dataInicio, DateTime dataFim,
-                                                    bool gratuito, decimal valor, bool online, string nomeEmpresa, Guid? organizadorId, Endereco endereco, Categoria categoria)
+                                                    bool gratuito, decimal valor, bool online, string nomeEmpresa, Guid? organizadorId, Endereco endereco, Guid categoriaId)
             {
                 var evento = new Evento()
                 {
@@ -168,7 +174,7 @@ namespace Evento.IO.Domain.Eventos
                     Online = online,
                     NomeEmpresa = nomeEmpresa,
                     Endereco = endereco,
-                    Categoria = categoria
+                    CategoriaId = categoriaId
                 };
 
                 if (organizadorId != null)
