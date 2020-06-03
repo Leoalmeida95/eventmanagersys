@@ -55,10 +55,16 @@ namespace Evento.IO.Domain.Eventos
         #region Setters
         public void AtribuirEndereco(Endereco endereco)
         {
-            if (!endereco)
-            {
+            if (!endereco.EhValido()) return;
 
-            }
+            Endereco = endereco;
+        }
+
+        public void AtribuirCategoria(Categoria categoria)
+        {
+            //if (!categoria.EhValido()) return;
+
+            //Categoria = categoria;
         }
         #endregion
 
@@ -77,6 +83,9 @@ namespace Evento.IO.Domain.Eventos
             ValidarLocal();
             ValidarNomeEmpresa();
             ValidationResult = Validate(this);
+
+            //Validacoes adicioanis ao modelo de Evento
+            ValidarEndereco();
         }
 
         private void ValidarNome()
@@ -128,12 +137,23 @@ namespace Evento.IO.Domain.Eventos
                 .NotEmpty().WithMessage("O nome do organizador precisa ser fornecido.")
                 .Length(2, 150).WithMessage("O nome do organizador precisa ter entre 2 e 150 caracteres.");
         }
+
+        private void ValidarEndereco()
+        {
+            if (Online) return;
+            if (Endereco.EhValido()) return;
+
+            foreach (var erro in Endereco.ValidationResult.Errors)
+            {
+                ValidationResult.Errors.Add(erro);
+            }
+        }
         #endregion
 
         public static class EventoFactory
         {
             public static Evento NovoEventoCompleto(Guid id, string nome, string descCurta, string descLonga, DateTime dataInicio, DateTime dataFim,
-                                                    bool gratuito, decimal valor, bool online, string nomeEmpresa, Guid? organizadorId)
+                                                    bool gratuito, decimal valor, bool online, string nomeEmpresa, Guid? organizadorId, Endereco endereco, Categoria categoria)
             {
                 var evento = new Evento()
                 {
@@ -147,10 +167,15 @@ namespace Evento.IO.Domain.Eventos
                     Valor = valor,
                     Online = online,
                     NomeEmpresa = nomeEmpresa,
+                    Endereco = endereco,
+                    Categoria = categoria
                 };
 
                 if (organizadorId != null)
                     evento.Organizador = new Organizador(organizadorId.Value);
+
+                if (online)
+                    evento.Endereco = null;
 
                 return evento;
             }
