@@ -4,13 +4,15 @@ using Eventos.IO.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Eventos.IO.Infra.Data.Migrations
 {
     [DbContext(typeof(EventosContext))]
-    partial class EventosContextModelSnapshot : ModelSnapshot
+    [Migration("20200606040301_CorrecaoTamanhoCampos")]
+    partial class CorrecaoTamanhoCampos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

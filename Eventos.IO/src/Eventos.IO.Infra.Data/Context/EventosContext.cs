@@ -28,63 +28,12 @@ namespace Eventos.IO.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.AddConfiguration(new EventoMapping());
-
-            #region FluentAPI
-
-
-            #region Endereco
-
-            modelBuilder.Entity<Endereco>()
-                                 .HasOne(a => a.Evento)
-                                 .WithOne(b => b.Endereco)
-                                 .HasForeignKey<Endereco>(c => c.EventoId)
-                                 .IsRequired(false);
-
-            modelBuilder.Entity<Endereco>()
-                                 .Ignore(e => e.ValidationResult);
-
-            modelBuilder.Entity<Endereco>()
-                                 .Ignore(e => e.CascadeMode);
-
-            modelBuilder.Entity<Endereco>()
-                                 .ToTable("Enderecos");
-
-            #endregion
-
-            #region Organizador
-
-            modelBuilder.Entity<Organizador>()
-                                 .Ignore(e => e.ValidationResult);
-
-            modelBuilder.Entity<Organizador>()
-                                 .Ignore(e => e.CascadeMode);
-
-            modelBuilder.Entity<Organizador>()
-                                 .ToTable("Organizadores");
-
-            #endregion
-
-            #region Categoria
-
-            modelBuilder.Entity<Categoria>()
-                                 .Ignore(e => e.ValidationResult);
-
-            modelBuilder.Entity<Categoria>()
-                                 .Ignore(e => e.CascadeMode);
-
-            modelBuilder.Entity<Categoria>()
-                                 .ToTable("Categorias");
-
-            #endregion
-
-            #region ValidationResult
             modelBuilder.Ignore<ValidationFailure>();
-
             modelBuilder.Ignore<ValidationResult>();
-            #endregion
-
-            #endregion
+            modelBuilder.AddConfiguration(new EventoMapping());
+            modelBuilder.AddConfiguration(new OrganizadorMapping());
+            modelBuilder.AddConfiguration(new CategoriaMapping());
+            modelBuilder.AddConfiguration(new EnderecoMapping());
 
             base.OnModelCreating(modelBuilder);
         }
