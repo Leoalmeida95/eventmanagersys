@@ -5,14 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="AutoMapper\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="automapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    <ProjectReference Include="..\Evento.IO.Domain\Evento.IO.Domain.csproj" />
+    <ProjectReference Include="..\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

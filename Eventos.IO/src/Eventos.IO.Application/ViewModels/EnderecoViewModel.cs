@@ -14,7 +14,7 @@ namespace Eventos.IO.Application.ViewModels
         }
 
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
         //não possui demais data annotations pois endereco não é obrigatório
         public string Logradouro { get; private set; }
         public string Numero { get; private set; }

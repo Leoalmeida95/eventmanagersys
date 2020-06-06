@@ -22,7 +22,7 @@ namespace Evento.IO.Domain.Organizadores
         public string Nome { get; private set; }
         public string CPF { get; private set; }
         public string Email { get; private set; }
-        public ICollection<Eventos.Evento> Eventos { get; set; }
+        public ICollection<Eventos.Evento> Eventos { get; private set; }
 
         public override bool EhValido()
         {

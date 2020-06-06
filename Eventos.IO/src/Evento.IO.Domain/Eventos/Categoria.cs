@@ -9,7 +9,7 @@ namespace Evento.IO.Domain.Eventos
         public string Nome { get; private set; }
 
         //EF propriedade de navegação
-        public virtual ICollection<Evento> Eventos { get; set; }
+        public virtual ICollection<Evento> Eventos { get; private set; }
 
         public Categoria(Guid id)
         {
