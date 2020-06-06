@@ -1,9 +1,11 @@
-# eventmanagersys
+# Eventos.IO
 Sistema para gerenciamento de Eventos com .NET Core e Angular
 
-
-## Validações de Entidades
-FluentValidation
+## Pacotes
+- FluentValidation
+- AutoMapper
+- DataAnnotations
+- ViewFeatures
 
 ## Padrões de Projeto
 - Repository
