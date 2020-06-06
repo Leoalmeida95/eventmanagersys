@@ -7,10 +7,9 @@ namespace Evento.IO.Domain.Eventos
     public class Categoria : Entity<Categoria>
     {
         public string Nome { get; private set; }
-        public virtual ICollection<Evento> Eventos { get; set; }
 
         //EF propriedade de navegação
-        public virtual Evento Evento { get; private set; }
+        public virtual ICollection<Evento> Eventos { get; set; }
 
         public Categoria(Guid id)
         {

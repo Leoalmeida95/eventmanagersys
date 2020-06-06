@@ -6,6 +6,8 @@ using Evento.IO.Domain.Eventos;
 using Evento.IO.Domain.Organizadores;
 using System.IO;
 using Microsoft.Extensions.Configuration;
+using FluentValidation.Results;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Eventos.IO.Infra.Data.Context
 {
@@ -15,6 +17,12 @@ namespace Eventos.IO.Infra.Data.Context
         public DbSet<Organizador> Organizadores { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
+
+        [NotMapped]
+        public DbSet<ValidationFailure> ValidationFailure { get; set; }
+
+        [NotMapped]
+        public DbSet<ValidationResult> ValidationResult { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -101,15 +109,21 @@ namespace Eventos.IO.Infra.Data.Context
 
             #region Categoria
 
-            modelBuilder.Entity<Organizador>()
+            modelBuilder.Entity<Categoria>()
                                  .Ignore(e => e.ValidationResult);
 
-            modelBuilder.Entity<Organizador>()
+            modelBuilder.Entity<Categoria>()
                                  .Ignore(e => e.CascadeMode);
 
-            modelBuilder.Entity<Organizador>()
+            modelBuilder.Entity<Categoria>()
                                  .ToTable("Categorias");
 
+            #endregion
+
+            #region ValidationResult
+            modelBuilder.Ignore<ValidationFailure>();
+
+            modelBuilder.Ignore<ValidationResult>();
             #endregion
 
             #endregion

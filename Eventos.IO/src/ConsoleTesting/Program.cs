@@ -20,16 +20,16 @@ namespace ConsoleTesting
 
             // registro com sucesso
             var date1 = DateTime.Now.AddDays(1);
-            var date2 = DateTime.Now.AddDays(2);
-            var cmd = new RegistrarEventoCommand("DevX", date1, date2, true, 0, true, "Empresa");
-            Inicio(cmd);
-            bus.SendCommand(cmd);
-            Fim(cmd);
+            //var date2 = DateTime.Now.AddDays(2);
+            //var cmd = new RegistrarEventoCommand("DevX", date1, date2, true, 0, true, "Empresa");
+            //Inicio(cmd);
+            //bus.SendCommand(cmd);
+            //Fim(cmd);
 
-            cmd = new RegistrarEventoCommand("", DateTime.Now.AddDays(2), DateTime.Now.AddDays(1), false, 0, false, "");
-            Inicio(cmd);
-            bus.SendCommand(cmd);
-            Fim(cmd);
+            //cmd = new RegistrarEventoCommand("", DateTime.Now.AddDays(2), DateTime.Now.AddDays(1), false, 0, false, "");
+            //Inicio(cmd);
+            //bus.SendCommand(cmd);
+            //Fim(cmd);
 
             var cmd2 = new AtualizarEventoCommand(Guid.NewGuid(), "DevX", "", "", DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), false, 50, true, "Empresa");
             Inicio(cmd2);

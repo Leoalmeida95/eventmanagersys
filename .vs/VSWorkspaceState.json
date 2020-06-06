@@ -3,14 +3,12 @@
     "",
     "\\Eventos.IO",
     "\\Eventos.IO\\src",
-    "\\Eventos.IO\\src\\ConsoleTesting\\bin",
-    "\\Eventos.IO\\src\\ConsoleTesting\\bin\\Debug",
     "\\Eventos.IO\\src\\Evento.IO.Domain",
     "\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos",
     "\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos\\Commands",
     "\\Eventos.IO\\src\\Eventos.IO.Domain.Core",
     "\\Eventos.IO\\tests"
   ],
-  "SelectedNode": "\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos\\Commands\\EventoCommandHandler.cs",
+  "SelectedNode": "\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj",
   "PreviewInSolutionExplorer": false
 }
