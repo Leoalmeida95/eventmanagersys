@@ -8,6 +8,8 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using FluentValidation.Results;
 using System.ComponentModel.DataAnnotations.Schema;
+using Eventos.IO.Infra.Data.Mappings;
+using Eventos.IO.Infra.Data.Extensions;
 
 namespace Eventos.IO.Infra.Data.Context
 {
@@ -26,54 +28,10 @@ namespace Eventos.IO.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.AddConfiguration(new EventoMapping());
+
             #region FluentAPI
 
-            #region Evento
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                .Property(e => e.Nome)
-                                .HasColumnType("varchar(150)")
-                                .IsRequired();
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                .Property(e => e.DescricaoCurta)
-                                .HasColumnType("varchar(150)");
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                .Property(e => e.DescricaoLonga)
-                                .HasColumnType("varchar(max)");
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                .Property(e => e.NomeEmpresa)
-                                .HasColumnType("varchar(150)")
-                                .IsRequired();
-
-
-            //ignora as colunas
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .Ignore(e => e.ValidationResult);
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .Ignore(e => e.Tags);
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .Ignore(e => e.CascadeMode);
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .ToTable("Eventos");
-
-            //relacionamentos
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .HasOne(e => e.Organizador)
-                                 .WithMany(o => o.Eventos)
-                                 .HasForeignKey(a => a.OrganizadorId);
-
-            modelBuilder.Entity<Evento.IO.Domain.Eventos.Evento>()
-                                 .HasOne(e => e.Categoria)
-                                 .WithMany(o => o.Eventos)
-                                 .HasForeignKey(a => a.CategoriaId)
-                                 .IsRequired(false);
-
-            #endregion
 
             #region Endereco
 
