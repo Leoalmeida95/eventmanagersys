@@ -12,7 +12,7 @@ namespace Eventos.IO.Application.ViewModels
         public Guid Id { get; set; }
         public string Nome { get; set; }
 
-        public SelectList Estados()
+        public SelectList Categorias()
         {
             return new SelectList(ListarCategorias(), "Id", "Nome");
         }
