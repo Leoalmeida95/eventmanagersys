@@ -1,16 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <UserSecretsId>aspnet-Eventos.IO.Site-44DC7F2F-6488-478C-9AD3-AC818C368988</UserSecretsId>
+    <UserSecretsId>EventosSecrets</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\src\Eventos.IO.Application\Eventos.IO.Application.csproj" />
     <ProjectReference Include="..\src\Eventos.IO.Infra.Data\Eventos.IO.Infra.Data.csproj" />
   </ItemGroup>
 
