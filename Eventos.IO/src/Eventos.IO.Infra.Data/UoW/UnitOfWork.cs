@@ -1,9 +1,6 @@
-﻿using Evento.IO.Domain.Eventos.Repository;
+﻿using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Domain.Core.Commands;
 using Eventos.IO.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Eventos.IO.Infra.Data.UoW
 {

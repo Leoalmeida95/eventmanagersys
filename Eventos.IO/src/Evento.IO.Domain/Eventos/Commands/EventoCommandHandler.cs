@@ -1,7 +1,7 @@
-﻿using Evento.IO.Domain.CommandHandlers;
-using Evento.IO.Domain.Eventos.Commands;
-using Evento.IO.Domain.Eventos.Events;
-using Evento.IO.Domain.Eventos.Repository;
+﻿using Eventos.IO.Domain.CommandHandlers;
+using Eventos.IO.Domain.Eventos.Commands;
+using Eventos.IO.Domain.Eventos.Events;
+using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Domain.Core.Bus;
 using Eventos.IO.Domain.Core.Events;
 using Eventos.IO.Domain.Core.Notifications;
@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Evento.IO.Domain.Eventos.Commands
+namespace Eventos.IO.Domain.Eventos.Commands
 {
     public class EventoCommandHandler : CommandHandler,
         IHandler<RegistrarEventoCommand>,

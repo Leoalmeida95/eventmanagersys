@@ -333,9 +333,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj",
-      "projectName": "Evento.IO.Domain",
-      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos.IO.Domain.csproj",
+      "projectName": "Eventos.IO.Domain",
+      "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos.IO.Domain.csproj",
       "packagesPath": "C:\\Users\\leonardo.silva\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\obj\\",
       "projectStyle": "PackageReference",

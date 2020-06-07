@@ -1,12 +1,13 @@
-﻿using Eventos.IO.Infra.Data.Extensions;
+﻿using Eventos.IO.Domain.Eventos;
+using Eventos.IO.Infra.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Eventos.IO.Infra.Data.Mappings
 {
-    public class EventoMapping : EntityTypeConfiguration<Evento.IO.Domain.Eventos.Evento>
+    public class EventoMapping : EntityTypeConfiguration<Evento>
     {
-        public override void Map(EntityTypeBuilder<Evento.IO.Domain.Eventos.Evento> builder)
+        public override void Map(EntityTypeBuilder<Evento> builder)
         {
             builder
                 .Property(e => e.Nome)

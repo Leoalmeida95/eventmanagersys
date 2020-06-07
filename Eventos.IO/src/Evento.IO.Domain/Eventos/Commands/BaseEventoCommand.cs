@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Evento.IO.Domain.Eventos.Commands
+namespace Eventos.IO.Domain.Eventos.Commands
 {
     public abstract class BaseEventoCommand : Command
     {

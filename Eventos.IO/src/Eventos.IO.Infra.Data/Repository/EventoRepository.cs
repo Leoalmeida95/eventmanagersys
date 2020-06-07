@@ -1,5 +1,5 @@
-﻿using Evento.IO.Domain.Eventos;
-using Evento.IO.Domain.Eventos.Repository;
+﻿using Eventos.IO.Domain.Eventos;
+using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Eventos.IO.Infra.Data.Repository
 {
-    public class EventoRepository : Repository<Evento.IO.Domain.Eventos.Evento>, IEventoRepository
+    public class EventoRepository : Repository<Evento>, IEventoRepository
     {
         public EventoRepository(EventosContext context) : base(context)
         {
@@ -30,12 +30,12 @@ namespace Eventos.IO.Infra.Data.Repository
             return Db.Enderecos.Find(id);
         }
 
-        public IEnumerable<Evento.IO.Domain.Eventos.Evento> ObterEventosPorOrganizador(Guid organizadorId)
+        public IEnumerable<Evento> ObterEventosPorOrganizador(Guid organizadorId)
         {
             return Db.Eventos.Where(e => e.OrganizadorId == organizadorId);
         }
 
-        public override Evento.IO.Domain.Eventos.Evento ObterPorId(Guid id)
+        public override Evento ObterPorId(Guid id)
         {
             return Db.Eventos.Include(e => e.Endereco).FirstOrDefault(a => a.Id == id);
         }

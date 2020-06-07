@@ -1,4 +1,4 @@
-﻿using Evento.IO.Domain.Eventos.Repository;
+﻿using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Domain.Core.Bus;
 using Eventos.IO.Domain.Core.Notifications;
 using FluentValidation.Results;
@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Evento.IO.Domain.CommandHandlers
+namespace Eventos.IO.Domain.CommandHandlers
 {
     public abstract class CommandHandler
     {

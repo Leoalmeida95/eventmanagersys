@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Evento.IO.Domain.Interfaces
+namespace Eventos.IO.Domain.Interfaces
 {
     public interface IRepository<TEntity> : IDisposable where TEntity: Entity<TEntity>
     {

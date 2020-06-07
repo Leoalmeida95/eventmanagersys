@@ -1,4 +1,4 @@
-﻿using Evento.IO.Domain.Organizadores;
+﻿using Eventos.IO.Domain.Organizadores;
 using Eventos.IO.Infra.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

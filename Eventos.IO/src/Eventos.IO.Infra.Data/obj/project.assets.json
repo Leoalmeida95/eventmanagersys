@@ -1206,7 +1206,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Evento.IO.Domain/1.0.0": {
+      "Eventos.IO.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1214,10 +1214,10 @@
           "FluentValidation": "8.6.2"
         },
         "compile": {
-          "bin/placeholder/Evento.IO.Domain.dll": {}
+          "bin/placeholder/Eventos.IO.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Evento.IO.Domain.dll": {}
+          "bin/placeholder/Eventos.IO.Domain.dll": {}
         }
       },
       "Eventos.IO.Domain.Core/1.0.0": {
@@ -4857,10 +4857,10 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Evento.IO.Domain/1.0.0": {
+    "Eventos.IO.Domain/1.0.0": {
       "type": "project",
-      "path": "../Evento.IO.Domain/Evento.IO.Domain.csproj",
-      "msbuildProject": "../Evento.IO.Domain/Evento.IO.Domain.csproj"
+      "path": "../Evento.IO.Domain/Eventos.IO.Domain.csproj",
+      "msbuildProject": "../Evento.IO.Domain/Eventos.IO.Domain.csproj"
     },
     "Eventos.IO.Domain.Core/1.0.0": {
       "type": "project",
@@ -4870,7 +4870,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Evento.IO.Domain >= 1.0.0",
+      "Eventos.IO.Domain >= 1.0.0",
       "Eventos.IO.Domain.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 2.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 2.0.0",
@@ -4913,8 +4913,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj": {
-              "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Evento.IO.Domain.csproj"
+            "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos.IO.Domain.csproj": {
+              "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Evento.IO.Domain\\Eventos.IO.Domain.csproj"
             },
             "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\leonardo.silva\\Desktop\\Nova pasta\\Eventos.IO\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj"

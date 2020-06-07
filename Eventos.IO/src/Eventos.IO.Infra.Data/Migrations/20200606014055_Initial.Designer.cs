@@ -21,7 +21,7 @@ namespace Eventos.IO.Infra.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Evento.IO.Domain.Eventos.Categoria", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Eventos.Categoria", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -33,7 +33,7 @@ namespace Eventos.IO.Infra.Data.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("Evento.IO.Domain.Eventos.Endereco", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Eventos.Endereco", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -63,7 +63,7 @@ namespace Eventos.IO.Infra.Data.Migrations
                     b.ToTable("Enderecos");
                 });
 
-            modelBuilder.Entity("Evento.IO.Domain.Eventos.Evento", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Eventos.Evento", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -109,7 +109,7 @@ namespace Eventos.IO.Infra.Data.Migrations
                     b.ToTable("Eventos");
                 });
 
-            modelBuilder.Entity("Evento.IO.Domain.Organizadores.Organizador", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Organizadores.Organizador", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -125,20 +125,20 @@ namespace Eventos.IO.Infra.Data.Migrations
                     b.ToTable("Organizadores");
                 });
 
-            modelBuilder.Entity("Evento.IO.Domain.Eventos.Endereco", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Eventos.Endereco", b =>
                 {
-                    b.HasOne("Evento.IO.Domain.Eventos.Evento", "Evento")
+                    b.HasOne("Eventos.IO.Domain.Eventos.Evento", "Evento")
                         .WithOne("Endereco")
-                        .HasForeignKey("Evento.IO.Domain.Eventos.Endereco", "EventoId");
+                        .HasForeignKey("Eventos.IO.Domain.Eventos.Endereco", "EventoId");
                 });
 
-            modelBuilder.Entity("Evento.IO.Domain.Eventos.Evento", b =>
+            modelBuilder.Entity("Eventos.IO.Domain.Eventos.Evento", b =>
                 {
-                    b.HasOne("Evento.IO.Domain.Eventos.Categoria", "Categoria")
+                    b.HasOne("Eventos.IO.Domain.Eventos.Categoria", "Categoria")
                         .WithMany("Eventos")
                         .HasForeignKey("CategoriaId");
 
-                    b.HasOne("Evento.IO.Domain.Organizadores.Organizador", "Organizador")
+                    b.HasOne("Eventos.IO.Domain.Organizadores.Organizador", "Organizador")
                         .WithMany("Eventos")
                         .HasForeignKey("OrganizadorId")
                         .OnDelete(DeleteBehavior.Cascade);

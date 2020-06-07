@@ -1,4 +1,4 @@
-﻿using Evento.IO.Domain.Interfaces;
+﻿using Eventos.IO.Domain.Interfaces;
 using Eventos.IO.Domain.Core.Models;
 using Eventos.IO.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Evento.IO.Domain\Evento.IO.Domain.csproj" />
+    <ProjectReference Include="..\Evento.IO.Domain\Eventos.IO.Domain.csproj" />
     <ProjectReference Include="..\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj" />
   </ItemGroup>
 

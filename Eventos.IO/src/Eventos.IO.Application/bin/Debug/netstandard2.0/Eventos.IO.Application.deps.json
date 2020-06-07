@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Eventos.IO.Application/1.0.0": {
         "dependencies": {
-          "Evento.IO.Domain": "1.0.0",
+          "Eventos.IO.Domain": "1.0.0",
           "Eventos.IO.Domain.Core": "1.0.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "NETStandard.Library": "2.0.3",
@@ -1046,13 +1046,13 @@
           }
         }
       },
-      "Evento.IO.Domain/1.0.0": {
+      "Eventos.IO.Domain/1.0.0": {
         "dependencies": {
           "Eventos.IO.Domain.Core": "1.0.0",
           "FluentValidation": "8.6.2"
         },
         "runtime": {
-          "Evento.IO.Domain.dll": {}
+          "Eventos.IO.Domain.dll": {}
         }
       },
       "Eventos.IO.Domain.Core/1.0.0": {
@@ -1715,7 +1715,7 @@
       "path": "system.threading.tasks.extensions/4.5.1",
       "hashPath": "system.threading.tasks.extensions.4.5.1.nupkg.sha512"
     },
-    "Evento.IO.Domain/1.0.0": {
+    "Eventos.IO.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

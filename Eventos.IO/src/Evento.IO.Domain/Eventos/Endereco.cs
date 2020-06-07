@@ -2,7 +2,7 @@
 using System;
 using FluentValidation;
 
-namespace Evento.IO.Domain.Eventos
+namespace Eventos.IO.Domain.Eventos
 {
     public class Endereco : Entity<Endereco>
     {

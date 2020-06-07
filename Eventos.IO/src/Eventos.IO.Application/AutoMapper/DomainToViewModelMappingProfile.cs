@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Evento.IO.Domain.Eventos;
+using Eventos.IO.Domain.Eventos;
 using Eventos.IO.Application.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace Eventos.IO.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<Evento.IO.Domain.Eventos.Evento, EventoViewModel>();
+            CreateMap<Evento, EventoViewModel>();
             CreateMap<Endereco, EnderecoViewModel>();
             CreateMap<Categoria, CatagoriaViewModel>();
         }

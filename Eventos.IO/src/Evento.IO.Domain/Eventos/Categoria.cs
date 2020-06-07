@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Evento.IO.Domain.Eventos
+namespace Eventos.IO.Domain.Eventos
 {
     public class Categoria : Entity<Categoria>
     {

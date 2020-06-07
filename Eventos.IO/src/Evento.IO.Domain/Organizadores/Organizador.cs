@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Evento.IO.Domain.Organizadores
+namespace Eventos.IO.Domain.Organizadores
 {
     public class Organizador : Entity<Organizador>
     {

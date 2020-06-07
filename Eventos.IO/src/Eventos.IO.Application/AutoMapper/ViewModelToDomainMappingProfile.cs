@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
-using Evento.IO.Domain.Eventos.Commands;
+using Eventos.IO.Domain.Eventos.Commands;
 using Eventos.IO.Application.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Eventos.IO.Application.AutoMapper
 {

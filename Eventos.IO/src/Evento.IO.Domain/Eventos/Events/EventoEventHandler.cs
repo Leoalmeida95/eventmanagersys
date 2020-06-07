@@ -1,7 +1,7 @@
 ﻿using Eventos.IO.Domain.Core.Events;
 using System;
 
-namespace Evento.IO.Domain.Eventos.Events
+namespace Eventos.IO.Domain.Eventos.Events
 {
     public class EventoEventHandler :
         IHandler<EventoRegistradoEvent>,

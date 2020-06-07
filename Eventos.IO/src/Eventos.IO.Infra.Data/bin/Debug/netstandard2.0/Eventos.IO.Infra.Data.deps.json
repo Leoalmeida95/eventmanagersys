@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Eventos.IO.Infra.Data/1.0.0": {
         "dependencies": {
-          "Evento.IO.Domain": "1.0.0",
+          "Eventos.IO.Domain": "1.0.0",
           "Eventos.IO.Domain.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.EntityFrameworkCore.Design": "2.0.0",
@@ -993,13 +993,13 @@
           }
         }
       },
-      "Evento.IO.Domain/1.0.0": {
+      "Eventos.IO.Domain/1.0.0": {
         "dependencies": {
           "Eventos.IO.Domain.Core": "1.0.0",
           "FluentValidation": "8.6.2"
         },
         "runtime": {
-          "Evento.IO.Domain.dll": {}
+          "Eventos.IO.Domain.dll": {}
         }
       },
       "Eventos.IO.Domain.Core/1.0.0": {
@@ -1606,7 +1606,7 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
-    "Evento.IO.Domain/1.0.0": {
+    "Eventos.IO.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

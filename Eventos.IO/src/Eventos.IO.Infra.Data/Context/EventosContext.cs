@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Evento.IO.Domain.Eventos;
-using Evento.IO.Domain.Organizadores;
+using Eventos.IO.Domain.Eventos;
+using Eventos.IO.Domain.Organizadores;
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using FluentValidation.Results;
@@ -15,7 +12,7 @@ namespace Eventos.IO.Infra.Data.Context
 {
     public class EventosContext : DbContext
     {
-        public DbSet<Evento.IO.Domain.Eventos.Evento> Eventos { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
         public DbSet<Organizador> Organizadores { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
