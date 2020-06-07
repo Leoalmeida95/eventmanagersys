@@ -9,8 +9,12 @@ C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Application.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Domain.Core.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Domain.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.CrossCutting.Bus.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.CrossCutting.IoC.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.Data.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Application.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.CrossCutting.Bus.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.CrossCutting.IoC.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Infra.Data.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Domain.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\Eventos.IO.Site\bin\Debug\netcoreapp2.1\Eventos.IO.Domain.Core.pdb
