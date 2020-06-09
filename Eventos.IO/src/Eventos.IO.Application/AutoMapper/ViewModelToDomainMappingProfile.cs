@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Eventos.IO.Domain.Eventos.Commands;
 using Eventos.IO.Application.ViewModels;
+using System;
 
 namespace Eventos.IO.Application.AutoMapper
 {
@@ -32,6 +33,19 @@ namespace Eventos.IO.Application.AutoMapper
                                                 c.Endereco.Estado,
                                                 c.Id
                                             )));
+
+            CreateMap<EnderecoViewModel, IncluirEnderecoEventoCommand>()
+                .ConstructUsing(c => new IncluirEnderecoEventoCommand(
+                                        Guid.NewGuid(),
+                                        c.Logradouro,
+                                        c.Numero,
+                                        c.Complemento,
+                                        c.Bairro,
+                                        c.CEP,
+                                        c.Cidade,
+                                        c.Estado,
+                                        c.EventoId
+                                        ));
 
             CreateMap<EventoViewModel, AtualizarEventoCommand>()
                 .ConstructUsing(c => new AtualizarEventoCommand(
