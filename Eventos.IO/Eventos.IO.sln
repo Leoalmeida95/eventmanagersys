@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{6D2C5719-DBD3-4932-8D6A-62AACA6992FB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{C6E2DBA4-FC10-483D-B06E-D9A5C3AA57AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{B5788055-2597-4E5D-8879-AE03366C43BA}"
@@ -25,11 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.Data", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Application", "src\Eventos.IO.Application\Eventos.IO.Application.csproj", "{EE39876C-BAC5-46C9-A611-DF07450E2145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Site", "Eventos.IO.Site\Eventos.IO.Site.csproj", "{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutting.IoC", "src\Eventos.IO.Infra.CrossCutting.IoC\Eventos.IO.Infra.CrossCutting.IoC.csproj", "{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Infra.CrossCutting.IoC", "src\Eventos.IO.Infra.CrossCutting.IoC\Eventos.IO.Infra.CrossCutting.IoC.csproj", "{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Infra.CrossCutting.Bus", "src\Eventos.IO.Infra.CrossCutting.Bus\Eventos.IO.Infra.CrossCutting.Bus.csproj", "{E86F4531-720D-440F-8F88-99E599388105}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos.IO.Infra.CrossCutting.Bus", "src\Eventos.IO.Infra.CrossCutting.Bus\Eventos.IO.Infra.CrossCutting.Bus.csproj", "{E86F4531-720D-440F-8F88-99E599388105}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{3C1F6811-93F9-41FE-AF64-332E0452E392}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eventos.IO.Site", "src\Eventos.IO.Site\Eventos.IO.Site.csproj", "{0347BB9E-23EB-4B6B-BE61-649D2A2B285B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,6 @@ Global
 		{EE39876C-BAC5-46C9-A611-DF07450E2145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE39876C-BAC5-46C9-A611-DF07450E2145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE39876C-BAC5-46C9-A611-DF07450E2145}.Release|Any CPU.Build.0 = Release|Any CPU
-		{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,6 +61,10 @@ Global
 		{E86F4531-720D-440F-8F88-99E599388105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86F4531-720D-440F-8F88-99E599388105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86F4531-720D-440F-8F88-99E599388105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0347BB9E-23EB-4B6B-BE61-649D2A2B285B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0347BB9E-23EB-4B6B-BE61-649D2A2B285B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0347BB9E-23EB-4B6B-BE61-649D2A2B285B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0347BB9E-23EB-4B6B-BE61-649D2A2B285B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,9 +76,9 @@ Global
 		{120BC9F4-520B-4032-97F7-107586E9AD49} = {7E176BA6-0FA7-4C56-A478-A7BA7E5DB2F5}
 		{1D60FD22-EEBB-4561-9D03-40D1D1CF1FB5} = {CCEA2348-8CEA-46FE-8737-7F18C70CA1D1}
 		{EE39876C-BAC5-46C9-A611-DF07450E2145} = {B5788055-2597-4E5D-8879-AE03366C43BA}
-		{154480C4-59F4-4E4E-98B7-5F3E3EC6BF9E} = {6D2C5719-DBD3-4932-8D6A-62AACA6992FB}
 		{CFE64F06-71DD-4D42-A6EC-E7BF3A4E91A2} = {2E22EC83-82CA-4ACD-9537-192359ABEC03}
 		{E86F4531-720D-440F-8F88-99E599388105} = {2E22EC83-82CA-4ACD-9537-192359ABEC03}
+		{0347BB9E-23EB-4B6B-BE61-649D2A2B285B} = {3C1F6811-93F9-41FE-AF64-332E0452E392}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13BA53C9-5BBC-4969-B0C9-19C802E64391}

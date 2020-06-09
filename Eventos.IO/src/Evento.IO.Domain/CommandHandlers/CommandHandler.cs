@@ -37,7 +37,6 @@ namespace Eventos.IO.Domain.CommandHandlers
             var commandResponse = _uow.Commit();
             if (commandResponse.Success) return true;
 
-            Console.WriteLine("Erro ao salvar");
             _bus.RaiseEvent(new DomainNotification("Commit", "Erro ao salvar"));
             return false;
         }
