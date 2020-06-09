@@ -1,4 +1,5 @@
-﻿using Eventos.IO.Domain.Eventos;
+﻿using Dapper;
+using Eventos.IO.Domain.Eventos;
 using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,21 @@ namespace Eventos.IO.Infra.Data.Repository
 
         }
 
+        //O Dapper é adicionado pra além de melhorar a performance, resolver o problema de tracking do .net core
+        public override IEnumerable<Evento> ObterTodos()
+        {
+            var Sql = @"SELECT
+                            *
+                        FROM
+                            EVENTOS E
+                        WHERE 
+                            E.EXCLUIDO = 0
+                        ORDER BY
+                            E.DATAFIM DESC";
+
+            return Db.Database.GetDbConnection().Query<Evento>(Sql);
+        }
+
         public void AdicioanrEndereco(Endereco endereco)
         {
             Db.Enderecos.Add(endereco);
@@ -27,17 +43,49 @@ namespace Eventos.IO.Infra.Data.Repository
 
         public Endereco ObterEnderecoPorId(Guid id)
         {
-            return Db.Enderecos.Find(id);
+            var Sql = @"SELECT
+                            *
+                        FROM
+                            ENDERECO E
+                        WHERE 
+                            E.ID = @uid";
+
+            return Db.Database.GetDbConnection().Query<Endereco>(Sql, new { uid = id }).FirstOrDefault();
         }
 
         public IEnumerable<Evento> ObterEventosPorOrganizador(Guid organizadorId)
         {
-            return Db.Eventos.Where(e => e.OrganizadorId == organizadorId);
+            var Sql = @"SELECT
+                            *
+                        FROM
+                            EVENTOS E
+                        WHERE 
+                            E.EXCLUIDO = 0
+                            AND E.ORGANIZADORID = @oid
+                        ORDER BY
+                            E.DATAFIM DESC";
+
+            return Db.Database.GetDbConnection().Query<Evento>(Sql, new { oid = organizadorId });
         }
 
         public override Evento ObterPorId(Guid id)
         {
-            return Db.Eventos.Include(e => e.Endereco).FirstOrDefault(a => a.Id == id);
+            var Sql = @"SELECT
+                            *
+                        FROM
+                            EVENTOS E
+                            LEFT JOIN ENDERECOS EN ON E.ID = EN.EVENTOID
+                        WHERE 
+                            E.ID = @uid";
+
+            //Os dois primeiros objetos são os que vem na consulta e o último é o objeto onde o resultado é armazenado
+            return Db.Database.GetDbConnection().Query<Evento, Endereco, Evento>(Sql, 
+                                                                                (e,en)=> {
+                                                                                    if (en != null)
+                                                                                        e.AtribuirEndereco(en);
+
+                                                                                    return e;
+                                                                                }, new {uid = id }).FirstOrDefault();
         }
     }
 }
