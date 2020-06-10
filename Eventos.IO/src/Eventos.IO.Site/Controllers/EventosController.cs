@@ -60,16 +60,15 @@ namespace Eventos.IO.Site.Controllers
 
         public IActionResult Edit(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var eventoViewModel = _eventoAppService.ObterPorId(id.Value);
-            if (eventoViewModel == null)
-            {
-                return NotFound();
-            }
+
+            if (eventoViewModel == null) return NotFound();
+
+
+            ViewBag.RetornoPost = OperacaoValida() ? "success,Evento atualizado com sucesso!"
+                                        : "warning,Evento não atualizado! Verifique as mensagens";
 
             return View(eventoViewModel);
         }
