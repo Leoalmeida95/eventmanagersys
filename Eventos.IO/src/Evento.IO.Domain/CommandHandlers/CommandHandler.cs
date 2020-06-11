@@ -5,6 +5,7 @@ using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Eventos.IO.Domain.Eventos.Interfaces;
 
 namespace Eventos.IO.Domain.CommandHandlers
 {

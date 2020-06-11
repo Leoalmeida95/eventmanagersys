@@ -6,6 +6,7 @@ using Eventos.IO.Domain.Core.Events;
 using Eventos.IO.Domain.Core.Notifications;
 using Eventos.IO.Domain.Eventos.Commands;
 using Eventos.IO.Domain.Eventos.Events;
+using Eventos.IO.Domain.Eventos.Interfaces;
 using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Domain.Organizadores.Commands;
 using Eventos.IO.Domain.Organizadores.Events;
@@ -26,6 +27,7 @@ namespace Eventos.IO.Infra.CrossCutting.IoC
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
             services.AddScoped<IEventoAppService, EventoAppService>();
+            services.AddScoped<IOrganizadorAppService, OrganizadorAppService>();
 
             //Domain - Commands
             services.AddScoped<IHandler<RegistrarEventoCommand>, EventoCommandHandler>();

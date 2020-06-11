@@ -1,3 +1,7 @@
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.AssemblyInfo.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\appsettings.json
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.deps.json
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.dll
@@ -12,10 +16,6 @@ C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.Bus.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\Eventos.IO.Infra.Data.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\bin\Debug\netstandard2.0\Eventos.IO.Domain.Core.pdb
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.csprojAssemblyReference.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.AssemblyInfo.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.csproj.CopyComplete
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.IoC\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.IoC.pdb

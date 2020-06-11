@@ -2,7 +2,8 @@
 using Eventos.IO.Domain.Core.Bus;
 using Eventos.IO.Domain.Core.Events;
 using Eventos.IO.Domain.Core.Notifications;
-using Eventos.IO.Domain.Eventos.Repository;
+using Eventos.IO.Domain.Eventos.Interfaces;
+using Eventos.IO.Domain.Organizadores.Events;
 using Eventos.IO.Domain.Organizadores.Repository;
 using System.Linq;
 
@@ -26,7 +27,7 @@ namespace Eventos.IO.Domain.Organizadores.Commands
         {
             var organizador = new Organizador(message.Id, message.Nome, message.CPF, message.Email);
 
-            if (organizador.EhValido())
+            if (!organizador.EhValido())
             {
                 NotificarValidacoesErro(organizador.ValidationResult);
                 return;
@@ -43,7 +44,7 @@ namespace Eventos.IO.Domain.Organizadores.Commands
 
             if (Commit())
             {
-
+                _bus.RaiseEvent(new OrganizadorRegistradoEvent(organizador.Id, organizador.Nome, organizador.CPF, organizador.Email));
             }
         }
     }

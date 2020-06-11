@@ -1,3 +1,7 @@
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.csprojAssemblyReference.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.AssemblyInfoInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.AssemblyInfo.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Application.deps.json
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Application.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Application.pdb
@@ -5,10 +9,6 @@ C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Domain.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Domain.pdb
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netstandard2.0\Eventos.IO.Domain.Core.pdb
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.csprojAssemblyReference.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.csproj.CoreCompileInputs.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.AssemblyInfoInputs.cache
-C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.AssemblyInfo.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.csproj.CopyComplete
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netstandard2.0\Eventos.IO.Application.pdb

@@ -1,13 +1,11 @@
 ﻿using Eventos.IO.Domain.CommandHandlers;
-using Eventos.IO.Domain.Eventos.Commands;
 using Eventos.IO.Domain.Eventos.Events;
 using Eventos.IO.Domain.Eventos.Repository;
 using Eventos.IO.Domain.Core.Bus;
 using Eventos.IO.Domain.Core.Events;
 using Eventos.IO.Domain.Core.Notifications;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using Eventos.IO.Domain.Eventos.Interfaces;
 
 namespace Eventos.IO.Domain.Eventos.Commands
 {

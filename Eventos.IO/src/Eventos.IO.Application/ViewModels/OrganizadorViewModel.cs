@@ -9,14 +9,14 @@ namespace Eventos.IO.Application.ViewModels
         public Guid Id { get; set; }
 
         [Required(ErrorMessage ="Nome requerido")]
-        public string Nome { get; private set; }
+        public string Nome { get; set; }
 
         [Required(ErrorMessage = "CPF requerido")]
         [StringLength(11)]
-        public string CPF { get; private set; }
+        public string CPF { get; set; }
 
         [Required(ErrorMessage = "Email requerido")]
         [EmailAddress(ErrorMessage = "Email em formato inválido")]
-        public string Email { get; private set; }
+        public string Email { get; set; }
     }
 }

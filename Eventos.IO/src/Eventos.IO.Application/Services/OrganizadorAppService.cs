@@ -22,20 +22,15 @@ namespace Eventos.IO.Application.Services
             _organizadorRepository = organizadorRepository;
         }
 
-        public OrganizadorAppService(OrganizadorViewModel organizadorViewModel)
-        {
-            var registroCommand = _mapper.Map<RegistrarOrganizadorCommand>(organizadorViewModel);
-            _bus.SendCommand(registroCommand);
-        }
-
         public void Dispose()
         {
             _organizadorRepository.Dispose();
         }
 
-        public void Registrar(OrganizadorViewModel organizador)
+        public void Registrar(OrganizadorViewModel organizadorViewModel)
         {
-            throw new NotImplementedException();
+            var registroCommand = _mapper.Map<RegistrarOrganizadorCommand>(organizadorViewModel);
+            _bus.SendCommand(registroCommand);
         }
     }
 }
