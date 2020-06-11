@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Eventos.IO.Infra.CrossCutting.Bus;
 using Eventos.IO.Infra.CrossCutting.IoC;
 using AutoMapper;
+using Eventos.IO.Domain.Interfaces;
+using Eventos.IO.Site.Models;
 
 namespace Eventos.IO.Site
 {
@@ -40,6 +42,8 @@ namespace Eventos.IO.Site
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddAutoMapper();
+
+            services.AddScoped<IUser, AspNetUser>();
 
             RegisterServices(services);
         }

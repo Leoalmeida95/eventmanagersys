@@ -140,8 +140,8 @@ namespace Eventos.IO.Domain.Eventos
         private void ValidarNomeEmpresa()
         {
             RuleFor(a => a.NomeEmpresa)
-                .NotEmpty().WithMessage("O nome do organizador precisa ser fornecido.")
-                .Length(2, 150).WithMessage("O nome do organizador precisa ter entre 2 e 150 caracteres.");
+                .NotEmpty().WithMessage("O nome da Empresa precisa ser fornecido.")
+                .Length(2, 150).WithMessage("O nome da Empresa precisa ter entre 2 e 150 caracteres.");
         }
 
         private void ValidarEndereco()
