@@ -44,10 +44,10 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataInicio)
+                @item.DataInicio.ToShortDateString()
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataFim)
+                @item.DataFim.ToShortDateString()
             </td>
             <td>
                 @{ 

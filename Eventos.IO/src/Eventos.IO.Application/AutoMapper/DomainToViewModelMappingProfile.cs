@@ -4,6 +4,7 @@ using Eventos.IO.Application.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Eventos.IO.Domain.Organizadores;
 
 namespace Eventos.IO.Application.AutoMapper
 {
@@ -14,6 +15,7 @@ namespace Eventos.IO.Application.AutoMapper
             CreateMap<Evento, EventoViewModel>();
             CreateMap<Endereco, EnderecoViewModel>();
             CreateMap<Categoria, CatagoriaViewModel>();
+            CreateMap<Organizador, OrganizadorViewModel>();
         }
     }
 }
