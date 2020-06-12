@@ -122,5 +122,39 @@ namespace Eventos.IO.Site.Controllers
             _eventoAppService.Excluir(id);
             return RedirectToAction("Index");
         }
+
+        public IActionResult IncluirEndereco(Guid? Id)
+        {
+            if(Id == null)
+            {
+                return NotFound();
+            }
+
+            var eventoViewModel = _eventoAppService.ObterPorId(Id.Value);
+
+            return PartialView("_IncluirEndereco", eventoViewModel);
+
+        }
+
+        public IActionResult AtualizarEndereco(Guid? Id)
+        {
+            if (Id == null)
+            {
+                return NotFound();
+            }
+
+            var eventoViewModel = _eventoAppService.ObterPorId(Id.Value);
+
+            return PartialView("_AtualizarEndereco", eventoViewModel);
+
+        }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult IncluirEndereco(EventoViewModel eventoViewModel)
+        //{
+        //    eventoViewModel.Endereco.EventoId = eventoViewModel.Id;
+
+        //}
     }
 }

@@ -98,6 +98,7 @@ C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Eventos\_Categorias.g.cshtml.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Eventos\_Detalhes.g.cshtml.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Eventos\_Endereco.g.cshtml.cs
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Eventos\_IncluirEndereco.g.cshtml.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
@@ -116,3 +117,4 @@ C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Eventos.IO.Site.csproj.CopyComplete
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Eventos.IO.Site.dll
 C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Eventos.IO.Site.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.1\Razor\Views\Eventos\_AtualizarEndereco.g.cshtml.cs
