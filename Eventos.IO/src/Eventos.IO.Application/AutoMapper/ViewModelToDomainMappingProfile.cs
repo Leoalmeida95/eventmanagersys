@@ -48,6 +48,19 @@ namespace Eventos.IO.Application.AutoMapper
                                         c.EventoId
                                         ));
 
+            CreateMap<EnderecoViewModel, AtualizarEnderecoEventoCommand>()
+                .ConstructUsing(c => new AtualizarEnderecoEventoCommand(
+                                        Guid.NewGuid(),
+                                        c.Logradouro,
+                                        c.Numero,
+                                        c.Complemento,
+                                        c.Bairro,
+                                        c.CEP,
+                                        c.Cidade,
+                                        c.Estado,
+                                        c.EventoId
+                                        ));
+
             CreateMap<EventoViewModel, AtualizarEventoCommand>()
                 .ConstructUsing(c => new AtualizarEventoCommand(
                                         c.Id,
