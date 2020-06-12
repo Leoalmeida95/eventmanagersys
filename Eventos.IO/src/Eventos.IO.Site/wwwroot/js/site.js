@@ -33,4 +33,38 @@
         orientation: "bottom right",
         autoclose: true
     });
+
+    $(document).ready(function () {
+        var $inputOnline = $("#Online");
+        var $inputGratuito = $("#Gratuito");
+
+        MostrarEndereco();
+        MostrarValor();
+
+        $inputOnline.click(function () {
+            MostrarEndereco();
+        });
+
+        $inputGratuito.click(function () {
+            MostrarValor();
+        });
+
+        function MostrarEndereco() {
+            if ($inputOnline.is(":checked"))
+                $("#EnderecoForm").hide();
+            else
+                $("#EnderecoForm").show();
+        }
+
+        function MostrarValor() {
+            if ($inputGratuito.is(":checked")) {
+                $("#Valor").val("0");
+                $("#Valor").prop("disabled", true);
+            }
+            else {
+                $("#Valor").prop("disabled", false);
+            }
+        }
+    }
+    );
 }
