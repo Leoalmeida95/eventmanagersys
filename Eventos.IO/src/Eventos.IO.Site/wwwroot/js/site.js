@@ -97,7 +97,7 @@ function AjaxModal() {
                     success: function (result) {
                         if (result.success) {
                             $('#myModal').modal('hide');
-                            $('#replacetarget').load(result.url);
+                            $('#EnderecoTarget').load(result.url);
                         } else {
                             $('#myModalContent').html(result);
                             bindForm(dialog);

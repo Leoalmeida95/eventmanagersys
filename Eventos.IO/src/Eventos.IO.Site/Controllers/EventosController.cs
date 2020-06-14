@@ -75,10 +75,6 @@ namespace Eventos.IO.Site.Controllers
 
             if (eventoViewModel == null) return NotFound();
 
-
-            ViewBag.RetornoPost = OperacaoValida() ? "success,Evento atualizado com sucesso!"
-                                        : "warning,Evento não atualizado! Verifique as mensagens";
-
             return View(eventoViewModel);
         }
 
@@ -90,6 +86,9 @@ namespace Eventos.IO.Site.Controllers
             if (!ModelState.IsValid) return View(eventoViewModel);
 
             _eventoAppService.Atualizar(eventoViewModel);
+
+            ViewBag.RetornoPost = OperacaoValida() ? "success,Evento atualizado com sucesso!"
+                            : "warning,Evento não atualizado! Verifique as mensagens";
 
             //TODO: Validar se a operação ocorreu com sucesso
 
