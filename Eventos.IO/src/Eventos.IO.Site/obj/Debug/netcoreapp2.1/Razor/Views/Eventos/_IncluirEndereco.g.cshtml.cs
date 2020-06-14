@@ -75,12 +75,12 @@ using Eventos.IO.Site.Models;
             WriteLiteral("</h4>\r\n</div>\r\n\r\n");
             EndContext();
             BeginContext(361, 528, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0718959ed111438d9d53f18e09ffef7f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "187979ac557448f4b90cce8ffde112b3", async() => {
                 BeginContext(396, 71, true);
                 WriteLiteral("\r\n    <div class=\"modal-body\">\r\n        <div class=\"row\">\r\n            ");
                 EndContext();
                 BeginContext(467, 14, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:summary", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b66626c2f6cd4d49ab2cae8d2df431b4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:summary", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a046f15b1e6546adbd36c17794626e61", async() => {
                 }
                 );
                 __SummaryViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Eventos__IncluirEndereco.__Generated__SummaryViewComponentTagHelper>();
