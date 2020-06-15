@@ -81,6 +81,9 @@ namespace Eventos.IO.Site.Controllers
 
             if (eventoViewModel == null) return NotFound();
 
+            if(ValidarAutoridadeEvento(eventoViewModel))
+                return RedirectToAction("MeusEventos", _eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
+
             return View(eventoViewModel);
         }
 
@@ -89,6 +92,9 @@ namespace Eventos.IO.Site.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(EventoViewModel eventoViewModel)
         {
+            if (ValidarAutoridadeEvento(eventoViewModel))
+                return RedirectToAction("MeusEventos", _eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
+
             if (!ModelState.IsValid) return View(eventoViewModel);
 
             eventoViewModel.OrganizadorId = OrganizadorId;
@@ -115,6 +121,9 @@ namespace Eventos.IO.Site.Controllers
 
             var eventoViewModel = _eventoAppService.ObterPorId(id.Value);
 
+            if (ValidarAutoridadeEvento(eventoViewModel))
+                return RedirectToAction("MeusEventos", _eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
+
             if (eventoViewModel == null)
             {
                 return NotFound();
@@ -128,6 +137,9 @@ namespace Eventos.IO.Site.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(Guid id)
         {
+            if (ValidarAutoridadeEvento(_eventoAppService.ObterPorId(id)))
+                return RedirectToAction("MeusEventos", _eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
+
             _eventoAppService.Excluir(id);
             return RedirectToAction("Index");
         }
@@ -196,6 +208,11 @@ namespace Eventos.IO.Site.Controllers
         public IActionResult ObterEndereco(Guid id)
         {
             return PartialView("_Detalhes", _eventoAppService.ObterPorId(id));
+        }
+
+        private bool ValidarAutoridadeEvento(EventoViewModel eventoViewModel)
+        {
+            return eventoViewModel.OrganizadorId != OrganizadorId;
         }
     }
 }

@@ -6,6 +6,7 @@ using Eventos.IO.Application.ViewModels;
 using Eventos.IO.Domain.Core.Bus;
 using System;
 using System.Collections.Generic;
+using Eventos.IO.Domain.Interfaces;
 
 namespace Eventos.IO.Application.Services
 {
@@ -15,12 +16,14 @@ namespace Eventos.IO.Application.Services
         private readonly IMapper _mapper;
 
         private readonly IEventoRepository _eventoRepository;
+        private readonly IUser _user;
 
-        public EventoAppService(IBus bus, IMapper mapper, IEventoRepository eventoRepository)
+        public EventoAppService(IBus bus, IMapper mapper, IEventoRepository eventoRepository, IUser user)
         {
             _bus = bus;
             _mapper = mapper;
             _eventoRepository = eventoRepository;
+            _user = user;
         }
 
         public void Register(EventoViewModel eventoViewModel)

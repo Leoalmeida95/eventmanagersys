@@ -1,84 +1,88 @@
-﻿@model Eventos.IO.Application.ViewModels.EventoViewModel
+﻿@using Eventos.IO.Application.ViewModels
+@model EventoViewModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.Nome;
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>EventoViewModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DescricaoCurta)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DescricaoCurta)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DescricaoLonga)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DescricaoLonga)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataInicio)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataInicio)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DataFim)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DataFim)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Gratuito)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Gratuito)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Valor)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Valor)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Online)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Online)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.NomeEmpresa)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.NomeEmpresa)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Categoria)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Categoria.Id)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.OrganizadorId)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.OrganizadorId)
-        </dd>
-    </dl>
+<div class="jumbotron">
+    <h2>@ViewData["Title"]</h2>
+    <h4>@Model.DescricaoCurta</h4>
 </div>
+
+<div class="container">
+    <div>
+        <div class="row">
+            @Html.DisplayFor(model => model.DescricaoLonga)
+        </div>
+        <hr />
+        <br />
+        <div class="row">
+            <b>Quando:</b><br />
+            @Model.DataInicio até @Model.DataFim
+        </div>
+        <br />
+        <div class="row">
+            <b>Valor:</b><br />
+            @{
+                if (Model.Gratuito)
+                {
+                    @Html.DisplayName("Gratuito")
+                }
+                else
+                {
+                    @Html.DisplayFor(model => model.Valor)
+                }
+            }
+        </div>
+        <br />
+        <div class="row">
+            <b>Tipo de Evento:</b><br />
+            @{ var categoria = new CatagoriaViewModel().ListarCategorias().FirstOrDefault(c => c.Id == Model.CategoriaId);
+                @Html.Raw(categoria.Nome)
+            }
+        </div>
+        <br />
+        <div class="row">
+            <b>Orgazinado por:</b><br />
+            @Html.DisplayFor(model => model.NomeEmpresa)
+        </div>
+        <br />
+        <div class="row">
+            <b>Onde?</b><br />
+            @{
+                if (Model.Online)
+                {
+                    @Html.DisplayName("Online")
+                }
+                else
+                {
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Logradouro):</b>
+                    @Html.DisplayFor(model => model.Endereco.Logradouro)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Numero):</b>
+                    @Html.DisplayFor(model => model.Endereco.Numero)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Bairro):</b>
+                    @Html.DisplayFor(model => model.Endereco.Bairro)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Complemento):</b>
+                    @Html.DisplayFor(model => model.Endereco.Complemento)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Cidade):</b>
+                    @Html.DisplayFor(model => model.Endereco.Cidade)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.CEP):</b>
+                    @Html.DisplayFor(model => model.Endereco.CEP)
+                    <br />
+                    <b>@Html.DisplayNameFor(model => model.Endereco.Estado):</b>
+                    @Html.DisplayFor(model => model.Endereco.Estado)
+                }
+            }
+        </div>
+    </div>
+</div>
+<br />
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a href="javascript:history.go(-1)" class="btn btn-info">Voltar</a>
 </div>
