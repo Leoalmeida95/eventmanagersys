@@ -6,10 +6,15 @@ Sistema para gerenciamento de Eventos com .NET Core e Angular
 - AutoMapper
 - DataAnnotations
 - ViewFeatures
+- Identity
 - Dapper
+- Entity Framework
 
-## Padrões de Projeto
+## PadrÃµes de Projeto
 - Repository
 - Unit of Work
-- Injeção de dependência
-- Segregação de responsabilidades de Leitura e Escrita com CQRS
+- InjeÃ§Ã£o de dependÃªncia
+- SegregaÃ§Ã£o de responsabilidades de Leitura e Escrita com CQRS
+
+## ApplicaÃ§Ã£o Cliente
+- Apresentation padrÃ£o com Razor, Views Components e Booststrap 4
