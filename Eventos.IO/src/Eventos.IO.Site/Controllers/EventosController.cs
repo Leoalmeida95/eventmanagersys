@@ -20,17 +20,21 @@ namespace Eventos.IO.Site.Controllers
             _eventoAppService = eventoAppService;
         }
 
+        [Route("")]
+        [Route("proximos-eventos")]
         public IActionResult Index()
         {
             return View(_eventoAppService.ObterTodos());
         }
 
+        [Route("meus-eventos")]
         [Authorize]
         public IActionResult MeusEventos()
         {
             return View(_eventoAppService.ObterEventoPorOrganizador(OrganizadorId));
         }
 
+        [Route("dados-do-evento/{id:guid}")]
         public IActionResult Details(Guid? id)
         {
             if (id == null)
@@ -49,6 +53,7 @@ namespace Eventos.IO.Site.Controllers
         }
 
         [Authorize]
+        [Route("novo-evento")]
         public IActionResult Create()
         {
             return View();
@@ -57,6 +62,7 @@ namespace Eventos.IO.Site.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
+        [Route("novo-evento")]
         public IActionResult Create(EventoViewModel eventoViewModel)
         {
             if (!ModelState.IsValid) return View(eventoViewModel);
@@ -73,6 +79,7 @@ namespace Eventos.IO.Site.Controllers
         }
 
         [Authorize]
+        [Route("editar-evento/{id:guid}")]
         public IActionResult Edit(Guid? id)
         {
             if (id == null) return NotFound();
@@ -90,6 +97,7 @@ namespace Eventos.IO.Site.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("editar-evento/{id:guid}")]
         public IActionResult Edit(EventoViewModel eventoViewModel)
         {
             if (ValidarAutoridadeEvento(eventoViewModel))
@@ -112,6 +120,7 @@ namespace Eventos.IO.Site.Controllers
         }
 
         [Authorize]
+        [Route("excluir-evento/{id:guid}")]
         public IActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -135,6 +144,7 @@ namespace Eventos.IO.Site.Controllers
         [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Route("excluir-evento/{id:guid}")]
         public IActionResult DeleteConfirmed(Guid id)
         {
             if (ValidarAutoridadeEvento(_eventoAppService.ObterPorId(id)))
@@ -144,9 +154,10 @@ namespace Eventos.IO.Site.Controllers
             return RedirectToAction("Index");
         }
 
+        [Route("incluir-endereco/{id:guid}")]
         public IActionResult IncluirEndereco(Guid? Id)
         {
-            if(Id == null)
+            if (Id == null)
             {
                 return NotFound();
             }
@@ -157,21 +168,9 @@ namespace Eventos.IO.Site.Controllers
 
         }
 
-        public IActionResult AtualizarEndereco(Guid? Id)
-        {
-            if (Id == null)
-            {
-                return NotFound();
-            }
-
-            var eventoViewModel = _eventoAppService.ObterPorId(Id.Value);
-
-            return PartialView("_AtualizarEndereco", eventoViewModel);
-
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("incluir-endereco/{id:guid}")]
         public IActionResult IncluirEndereco(EventoViewModel eventoViewModel)
         {
             ModelState.Clear();
@@ -188,8 +187,23 @@ namespace Eventos.IO.Site.Controllers
             return PartialView("_IncluirEndereco", eventoViewModel);
         }
 
+        [Route("atualizar-endereco/{id:guid}")]
+        public IActionResult AtualizarEndereco(Guid? Id)
+        {
+            if (Id == null)
+            {
+                return NotFound();
+            }
+
+            var eventoViewModel = _eventoAppService.ObterPorId(Id.Value);
+
+            return PartialView("_AtualizarEndereco", eventoViewModel);
+
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("atualizar-endereco/{id:guid}")]
         public IActionResult AtualizarEndereco(EventoViewModel eventoViewModel)
         {
             ModelState.Clear();
@@ -205,6 +219,7 @@ namespace Eventos.IO.Site.Controllers
             return PartialView("_AtualizarEndereco", eventoViewModel);
         }
 
+        [Route("listar-endereco/{id:guid}")]
         public IActionResult ObterEndereco(Guid id)
         {
             return PartialView("_Detalhes", _eventoAppService.ObterPorId(id));
