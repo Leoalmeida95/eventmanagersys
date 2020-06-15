@@ -10,12 +10,15 @@
 
     toastr.options = {
         "debug": false,
+        "progressBar":true,
         "positionClass": "toast-top-right",
         "onclick": null,
         "fadeIn": 300,
         "fadeOut": 1000,
         "timeOut": 5000,
-        "extendedTimeOut": 1000
+        "extendedTimeOut": 1000,
+        "hideDuration": 1000,
+        "hideEasing": "linear"
     }
 
     $('#DataInicio').datepicker({
