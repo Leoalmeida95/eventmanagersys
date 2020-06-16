@@ -206,7 +206,7 @@ using Eventos.IO.Site.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(2043, 212, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "61988eb21aad43d5b3c3c3221496fa80", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d276f890cb374aa78be7d9c861a92ffb", async() => {
                 BeginContext(2140, 111, true);
                 WriteLiteral("\r\n                        <span title=\"Editar\" class=\"glyphicon glyphicon-pencil\"></span>\r\n                    ");
                 EndContext();
@@ -255,7 +255,7 @@ using Eventos.IO.Site.Models;
             WriteLiteral("        <table class=\"table\">\r\n            <tr>\r\n                <th>\r\n                    ");
             EndContext();
             BeginContext(2432, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b288cbe0d4a742c19cf4671aa1150708", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "359bd4cfacc24d44b89bb1e9a4d24e4e", async() => {
                 BeginContext(2524, 143, true);
                 WriteLiteral("\r\n                        <span title=\"Incluir Endereco\" class=\"glyphicon glyphicon-plus-sign\"></span> Adicionar Endereço\r\n                    ");
                 EndContext();

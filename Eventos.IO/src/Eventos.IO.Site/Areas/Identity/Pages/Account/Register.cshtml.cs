@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Eventos.IO.Application.Interfaces;
@@ -85,8 +86,15 @@ namespace Eventos.IO.Site.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+
+                var ler = new Claim("Eventos", "Ler");
+                var gravar = new Claim("Eventos", "Gravar");
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
-                if (result.Succeeded)
+                var resultler = await _userManager.AddClaimAsync(user, ler);
+                var resultgravar = await _userManager.AddClaimAsync(user, gravar);
+
+                if (result.Succeeded && resultler.Succeeded && resultgravar.Succeeded)
                 {
                     var organizador = new OrganizadorViewModel
                     {
