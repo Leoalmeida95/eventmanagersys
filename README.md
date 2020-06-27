@@ -9,6 +9,7 @@ Sistema para gerenciamento de Eventos com .NET Core e Angular
 - Identity
 - Dapper
 - Entity Framework
+- Hosting Environment
 
 ## Padrões de Projeto
 - Repository

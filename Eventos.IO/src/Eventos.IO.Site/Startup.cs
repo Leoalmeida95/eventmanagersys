@@ -12,6 +12,7 @@ using Eventos.IO.Infra.CrossCutting.IoC;
 using AutoMapper;
 using Eventos.IO.Domain.Interfaces;
 using Eventos.IO.Site.Models;
+using Eventos.IO.Infra.CrossCutting.AspNetFilters;
 
 namespace Eventos.IO.Site
 {
@@ -46,7 +47,9 @@ namespace Eventos.IO.Site
                 options.AddPolicy("PodeGravarEventos", policy => policy.RequireClaim("Eventos", "Gravar"));
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options => {
+                options.Filters.Add(new ServiceFilterAttribute(typeof(GlobalExceptionHandlingFilter)));
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddAutoMapper();
 
             services.AddScoped<IUser, AspNetUser>();
