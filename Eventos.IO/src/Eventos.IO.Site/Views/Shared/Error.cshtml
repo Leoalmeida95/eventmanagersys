@@ -12,3 +12,11 @@
         <strong>Request ID:</strong> <code>@Model.RequestId</code>
     </p>
 }
+
+@{
+    if(ViewData["MensagemErro"] != null)
+    {
+        <br />
+        <h2 class="text-danger">@ViewData["MensagemErro"]</h2>
+    }
+}

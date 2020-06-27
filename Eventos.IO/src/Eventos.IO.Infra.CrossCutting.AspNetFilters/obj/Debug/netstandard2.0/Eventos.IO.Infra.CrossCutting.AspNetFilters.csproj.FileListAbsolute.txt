@@ -1,0 +1,9 @@
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.deps.json
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\bin\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.pdb
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.csprojAssemblyReference.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.AssemblyInfoInputs.cache
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.AssemblyInfo.cs
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.dll
+C:\Users\leonardo.silva\Desktop\Nova pasta\Eventos.IO\Eventos.IO\src\Eventos.IO.Infra.CrossCutting.AspNetFilters\obj\Debug\netstandard2.0\Eventos.IO.Infra.CrossCutting.AspNetFilters.pdb
